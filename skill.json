@@ -1,0 +1,38 @@
+{
+  "name": "genpark-open-model-registry-license-compliance-auditor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Open model registry and license compliance auditor verifying commercial usage rights across weights and datasets.",
+  "author": "genpark",
+  "category": "model-governance",
+  "tags": [
+    "opencsg",
+    "starship",
+    "model-registry",
+    "license-auditor",
+    "open-source-governance"
+  ],
+  "inputs": {
+    "model_identifier": {
+      "type": "string"
+    },
+    "target_commercial_use_case": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "license_audit_id": {
+      "type": "string"
+    },
+    "declared_spdx_license": {
+      "type": "string"
+    },
+    "compliance_attestation_status": {
+      "type": "string"
+    },
+    "registry_provenance_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
